@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00838F"
+    android:background="#0277BD"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
+        android:background="#001F0808"
         android:text="HOLA "
-        android:textColor="#C2185B"
+        android:textColor="#FFFF8D"
         android:textColorHighlight="#00BCD4"
         android:textColorLink="#00C02323"
         android:textCursorDrawable="@drawable/ic_launcher_foreground"
@@ -37,10 +38,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:shadowColor="#00C71A1A"
         android:text="Button"
         android:textColor="#F57F17"
+        android:textColorHighlight="#006F1212"
         android:textColorHint="#D32F2F"
-        android:textIsSelectable="false"
+        android:textIsSelectable="true"
         android:textSize="24sp"
         android:textStyle="normal|bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,25 +52,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="318dp"
-        android:layout_height="296dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="#8BFF80AB"
-        android:isScrollContainer="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -150,5 +134,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
